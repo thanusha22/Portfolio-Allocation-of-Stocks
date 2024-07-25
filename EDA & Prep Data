@@ -1,0 +1,16 @@
+# Importing essential modules for data manipulation and visualization.
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# Installing and importing packages for fetching stock-specific information.
+!pip install yahoo_fin
+!pip install requests_html
+import yahoo_fin.stock_info as si
+import yfinance as yf
+
+# This code chunk mounts your Google Drive in Colab thereby connecting your Colab environment to your Google Drive
+# so that you can access files and data stored in your Drive.
+from google.colab import drive
+drive.mount('/content/drive')
